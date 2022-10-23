@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background: linear-gradient(rgb(34, 139, 34), white);
+    background: linear-gradient(rgb(128,128,128), white);
     background-size: 100%, 100%;
     background-repeat: no-repeat;
 }
@@ -25,7 +25,7 @@ body {
 }
 
 .navbar {
-    background-color: rgb(112, 128, 144);
+    background-color: rgb(128,128,128);
 }
 
 .nav-link:hover {
