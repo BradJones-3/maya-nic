@@ -26,6 +26,7 @@ body {
 
 .navbar {
     background-color: rgb(128,128,128);
+    margin-bottom: 15px;
 }
 
 .nav-link:hover {
@@ -34,14 +35,94 @@ body {
 
 /** Carousel **/
 
+.center-block {
+    float: none;
+}
+
 #maya-style {
-    width: 100vw;
-    height: 40vh;
+    width: 200vw;
+    height: 100vh;
 
     /* Fixes default padding issue with carousel */
     padding: 0;
 }
 
+.c-image1 {
+    background: url(/media/pexels-elviss-railijs-bitāns-1389429.jpg) no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    width: 100vw;
+    min-height: 80vh;
+}
+
+.c-image2 {
+    background: url(/media/pexels-elviss-railijs-bitāns-1389429.jpg) no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    width: 100vw;
+    min-height: 80vh;
+}
+
+.c-image3 {
+    background: url(/media/pexels-elviss-railijs-bitāns-1389429.jpg) no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    width: 100vw;
+    min-height: 80vh;
+}
+
+.c-image4 {
+    background: url(/media/pexels-elviss-railijs-bitāns-1389429.jpg) no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    width: 100vw;
+    min-height: 80vh;
+}
+
+.c-image5 {
+    background: url(/media/pexels-elviss-railijs-bitāns-1389429.jpg) no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    width: 100vw;
+    min-height: 80vh;
+}
+
+.c-image6 {
+    background: url(/media/pexels-elviss-railijs-bitāns-1389429.jpg) no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    width: 100vw;
+    min-height: 80vh;
+}
+
+.c-image7 {
+    background: url(/media/pexels-elviss-railijs-bitāns-1389429.jpg) no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    width: 100vw;
+    min-height: 80vh;
+}
 /** Footer **/
 
 .footer{
