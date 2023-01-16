@@ -8,10 +8,6 @@ html {
     margin: 0;
 }
 
-html {
-    height: 100%;
-}
-
 body {
     background: linear-gradient(rgb(128,128,128), white);
     background-size: 100%, 100%;
@@ -29,8 +25,35 @@ body {
     margin-bottom: 15px;
 }
 
+.navbar-brand {
+    color: black;
+}
+
+.navbar-brand:hover {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.navbar-toggler-icon {
+    color: black;
+}
+
+.nav-link {
+    color: black !important;
+}
+
 .nav-link:hover {
-    background-color: rgb(34, 139, 34);
+    background-color: rgb(90, 90, 90);
+}
+
+
+/**  Index Page  **/
+
+.index-title {
+    color: aliceblue;
+    width: 100%;
+    display: inline;
+    text-align: center;
 }
 
 /** Carousel **/
@@ -123,32 +146,74 @@ body {
     width: 100vw;
     min-height: 80vh;
 }
+
+/** Industry Work **/
+
+.bg-custom {
+    background-color: #D1CDC9;
+    border: 3px solid #353839 !important;
+}
+
+
 /** Footer **/
 
 .footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height:100px;
-    background:#ccc;
+    background: rgb(75,75,75);
+    max-width: 100vw;
+    max-height: 120px;
 }
 
 .socials {
-      text-align: center;
-      background-color: rgba(20, 20, 20, .6);
-      min-height: 100%;
-      min-width: 100%;
-      padding: 20px;
-      margin-right: 25px;
-  }
+    text-align: center;
+    padding-left: 0;
+    font-size: 200%;
+}
 
 .socials i {
-      color: #FF8C00;
-      text-align: center;
-      font-size: 200%;
-  }
+    color: white;
+    text-align: center;
+    padding-top: 35px;
+    padding-right: 10px;
+}
 
 .socials i:hover {
-      color: #8B0000;
-  }
+    color: rgb(175, 175, 175);
+}
+
+.dev-link,
+.dev-link > a {
+    color: aliceblue;
+    font-size: 8px !important;
+    padding-right: 10px;
+}
+
+.dev-link a:hover{
+    color: antiquewhite;
+}
+
+.modal-contact-dark-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #353839;
+    overflow: auto;
+}
+
+.contact-modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-modal {
+    position: relative;
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px 40px 1px 40px;
+    top: 25%;
+}
