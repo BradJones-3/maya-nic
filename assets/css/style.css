@@ -217,3 +217,8 @@ body {
     padding: 20px 40px 1px 40px;
     top: 25%;
 }
+
+.modal-close {
+    position: absolute;
+    right: 15px;
+}
