@@ -28,22 +28,23 @@
 <body>
 
   <nav class="navbar">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-      aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-backdrop="false" data-toggle="collapse"
+      data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+      aria-label="Toggle navigation">
       <span><i class="fa fa-bars" aria-hidden="true"></i></span>
     </button>
     <a class="navbar-brand" href="index.html">Maya Rose Nicholls</a>
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav mr-auto mt-3 mt-lg-0 text-center">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About Me</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="industry.html">Industry Work</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="industry.html">Industry Work <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact Page</a>
@@ -78,10 +79,18 @@
       <!-- timeline item 1 event content -->
       <div class="col-sm py-2">
         <div class="card">
-          <div class="card-body">
+          <div class="card-header">
+            <h4 class="card-title">
+              <a class="btn btn-link" data-toggle="collapse" href="#timeline-item-1">
+                Title
+              </a>
+            </h4>
             <div class="float-right text-muted small">Date</div>
-            <h4 class="card-title">Title</h4>
-            <p class="card-text">Description</p>
+          </div>
+          <div id="timeline-item-1" class="collapse">
+            <div class="card-body">
+              <p>Description</p>
+            </div>
           </div>
         </div>
       </div>
@@ -173,44 +182,104 @@
       </div>
     </div>
     <!--/row-->
-  </div>
-
-
-  <div class="footer">
-    <div class="row">
-      <div class="col">
-        <ul class="list-inline socials">
-          <li class="list-inline-item"><a href="https://www.instagram.com/_mayaroseee/" target="_blank"
-              title="Maya's Personal Instagram"><i class="fa fa-instagram"></i></a>
-          </li>
-          <li class="list-inline-item"><a href="https://www.facebook.com/maya.nicholls.9" target="_blank"
-              title="Maya's Facebook"><i class="fa fa-facebook"></i></a>
-          </li>
-          <li class="list-inline-item"><a href="https://www.instagram.com/mayasmakeupandbrows/" target="_blank"
-              title="Maya's Make-up and Brows"><i class="fa fa-instagram"></i></a>
-          </li>
-          <li class="list-inline-item">
-            <i class="fa fa-envelope" data-toggle="modal" data-target="#contact-modal"></i>
-          </li>
-        </ul>
-        <div class="dev-link float-right">This website was made by <a href="https://github.com/BradJones-3"
-            class="dev-link" target="_blank" rel="noopener noreferrer">Bradley Jones</a></div>
+    <!-- timeline item 5 -->
+    <div class="row no-gutters">
+      <div class="col-sm">
+        <!--spacer-->
+      </div>
+      <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <h5 class="m-2">
+          <span class="badge badge-pill bg-custom border">&nbsp;</span>
+        </h5>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      <div class="col-sm py-2">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">
+              <a class="btn btn-timeline" data-toggle="collapse" href="#timeline-item-5">
+                Work Title
+              </a>
+            </h4>
+            <div class="float-right text-muted small">Insert Date</div>
+          </div>
+          <div id="timeline-item-5" class="collapse">
+            <div class="card-body">
+              <p>Description</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
   </div>
 
+  <footer>
+    <div class="footer">
+      <div class="row">
+        <div class="col">
+          <ul class="list-inline socials">
+            <li class="list-inline-item"><a href="https://www.instagram.com/_mayaroseee/" target="_blank"
+                title="Maya's Personal Instagram"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li class="list-inline-item"><a href="https://www.facebook.com/maya.nicholls.9" target="_blank"
+                title="Maya's Facebook"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/mayasmakeupandbrows/" target="_blank"
+                title="Maya's Make-up and Brows"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li class="list-inline-item modal-button">
+              <i class="fa fa-envelope" data-toggle="modal" data-target="#contact-form-modal"></i>
+            </li>
+          </ul>
+          <div class="dev-link float-right">This website was made by <a href="https://github.com/BradJones-3"
+              class="dev-link" target="_blank" rel="noopener noreferrer">Bradley Jones</a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
+
+  </div>
+  </div>
+  </div>
   <!-- MODAL FOR CONTACT -->
-  <div class="modal-contact-container">
-    <div class="contact-modal">
-      <button class="modal-close">&times;</button>
-      <div class="contact-modal-form-content">
-
-      </div>
+  <!-- Modal container -->
+  <div id="contact-form-modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <form>
+        <div class="form-group">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name">
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
     </div>
-  </div>
-  </div>
-  </div>
   </div>
 </body>
 
