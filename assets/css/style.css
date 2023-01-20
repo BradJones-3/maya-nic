@@ -70,6 +70,14 @@ body {
     padding: 0;
 }
 
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+
 .c-image1 {
     background: url(/media/pexels-elviss-railijs-bitāns-1389429.jpg) no-repeat center top;
     -webkit-background-size: cover;
@@ -276,3 +284,17 @@ body {
 .form-group textarea {
     width: 80%;
 }
+
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+    #carousel {
+      width: 100%;
+    }
+    #carousel img {
+        object-fit: contain;
+        max-height: 100%;
+        width: auto;
+      }
+  }

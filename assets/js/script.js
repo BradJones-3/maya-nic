@@ -27,21 +27,14 @@ window.onclick = function(event) {
   }
 }
 
-// Navbar Icon
 
-$(document).ready(function(){
-  // Wait for the document to be ready
-  $('.navbar-toggler').click(function(){
-      // When the navbar-toggler button is clicked
-      if($('.navbar-toggler i').hasClass('fa-bars')){
-          // Check if the icon currently has the class 'fa-bars'
-          $('.navbar-toggler i').removeClass('fa-bars').addClass('fa-times');
-          // If it does, remove the 'fa-bars' class and add the 'fa-times' class
-      }
-      else{
-          // If the icon doesn't have the 'fa-bars' class
-          $('.navbar-toggler i').removeClass('fa-times').addClass('fa-bars');
-          // remove the 'fa-times' class and add the 'fa-bars' class
-      }
-  });
-});
+function changeIcon() {
+  // set delay of 350ms before toggling the classes on the icon element
+  setTimeout(function(){
+    // get the icon element
+    var icon = document.getElementById("icon");
+    // toggle the classes "fa-bars" and "fa-times" on the icon element
+    icon.classList.toggle("fa-bars");
+    icon.classList.toggle("fa-times");
+  }, 350);
+}
