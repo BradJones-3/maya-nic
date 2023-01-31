@@ -79,7 +79,7 @@ body {
 
 
 .c-image1 {
-    background: url(../media/maya-vogue.png) no-repeat center top;
+    background: url(../media/maya-vogue.png) no-repeat center center top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
