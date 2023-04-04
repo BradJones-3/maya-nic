@@ -27,7 +27,6 @@ window.onclick = function(event) {
   }
 }
 
-
 function changeIcon() {
   // set delay of 350ms before toggling the classes on the icon element
   setTimeout(function(){
