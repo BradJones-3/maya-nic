@@ -57,9 +57,13 @@ hr {
 .index-title {
     color: aliceblue;
     width: 100%;
-    display: inline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    height: 100px;
 }
+
 
 /* Carousel */
 
@@ -240,27 +244,28 @@ hr {
   
   /* Modal content */
   .modal-content {
-    background-color: #fefefe;
+    background-color: #212529;
+    color: #FFFFFF;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
   }
   
-  /* Close button */
-  .close-button {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+/* CSS for the modal close button */
+.close {
+    color: white;
+    opacity: 1;
+    text-shadow: none;
+    background: none;
+    border: none;
   }
   
-  .close-button:hover,
-  .close-button:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  .close:hover {
+    color: white;
+    opacity: 0.75;
   }
+  
 
 /* Form group styles */
 .form-group {
