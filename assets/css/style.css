@@ -66,6 +66,7 @@ body {
 }
 
 .navbar-brand {
+    color: var(--colour1);
     font-family: var(--titlefont);
     padding: 10px 0px 0px 10px;
     margin-bottom: 0;
@@ -78,7 +79,7 @@ body {
 
 .navbar-brand:hover {
     text-decoration: none;
-    color: var(--colour1);
+    color: var(--colour3);
 }
 
 .navbar-nav {
@@ -267,11 +268,31 @@ hr {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
     width: 100vw;
     height: 100vh;
 }
 
+#about-text {
+    color: var(--colour1);
+    width: 100vw;
+    height: 40vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#about-text h1 {
+    font-family: var(--specialfont);
+    font-size: 2em;
+}
+
+#about-text h2 {
+    font-family: var(--specialfont);
+    font-size: 2em;
+    font-weight: 400;
+}
 /* Footer */
 
 .left-footer {
@@ -380,7 +401,11 @@ hr {
         object-fit: contain;
         max-height: 100%;
         width: auto;
-      }
+    }
+      #about-hero {
+        background-size: cover;
+        height: 10vh; /* Adjust the height as needed */
+    }
   }
 
 
@@ -394,4 +419,12 @@ hr {
     .socials-large {
         background-color: var(--nav-dark);
     }
+
 }
+
+@media (max-width: 900px) {
+    #about-hero {
+      background-size: cover;
+      height: 60vh; /* Adjust the height as needed */
+    }
+  }
