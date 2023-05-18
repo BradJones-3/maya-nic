@@ -27,26 +27,31 @@
 </head>
 
 <body>
-
-  <nav class="navbar">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-      aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" onClick="changeIcon()">
-      <span><i id="icon" class="fa fa-bars" aria-hidden="true"></i></span>
-    </button>
+  <div class="nav-brand">
     <a class="navbar-brand" href="index.html">Maya Rose Nicholls</a>
-
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      <ul class="navbar-nav mr-auto mt-3 mt-lg-0 text-center">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About Me</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="industry.html">Industry Work <span class="sr-only">(current)</span></a>
-        </li>
-      </ul>
+  </div>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <!---------Toggler Button --------->
+      <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu"
+        aria-controls="navbarMenu" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse nav-padding" id="navbarMenu">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="industry.html">Industry Work</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
     </div>
   </nav>
 
@@ -243,24 +248,17 @@
 
   </div>
 
-  <footer>
-    <div class="footer">
-      <div class="row">
-        <div class="col">
-          <ul class="list-inline socials">
-            <li class="list-inline-item"><a href="https://www.facebook.com/maya.nicholls.9" target="_blank"
-                title="Maya's Facebook"><i class="fa fa-facebook"></i></a>
-            </li>
-            <li class="list-inline-item"><a href="https://www.instagram.com/mayasmakeupandbrows/" target="_blank"
-                title="Maya's Make-up and Brows"><i class="fa fa-instagram"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <i class="fa fa-envelope" data-toggle="modal" data-target="#contact-modal"></i>
-            </li>
-          </ul>
-          <div class="dev-link float-right">This website was made by <a href="https://github.com/BradJones-3"
-              class="dev-link" target="_blank" rel="noopener noreferrer">Bradley Jones</a></div>
-        </div>
+  <footer class="container-fluid fixed-bottom">
+    <div class="row">
+      <div class="col left-footer d-none d-lg-block d-xl-block">
+      </div>
+      <div class="col socials-large d-none d-md-block d-lg-block d-xl-block">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="https://www.facebook.com/maya.nicholls.9" rel="noopener" title="Maya's Facebook"><i class="fa fa-facebook"></i></a></li>
+          <li class="list-inline-item"><a href="https://www.instagram.com/mayasmakeupandbrows/" target="_blank"
+            title="Maya's Make-up and Brows"><i class="fa fa-instagram"></i></a></li>
+          <li class="list-inline-item"><i class="fa fa-envelope" data-toggle="modal" data-target="#contact-modal"></i></li>
+        </ul>
       </div>
     </div>
   </footer>

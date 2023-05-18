@@ -1,14 +1,28 @@
+/*------------------------------------------- Font Import*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Instrument+Sans&family=Roboto:wght@400;700&display=swap');
+
 /*------------------------------------------- Root Variables*/
 
 :root {
+    /* Font Variables */
+    --titlefont: 'Roboto', sans-serif;
+    --bodyfont: 'Lato', sans-serif;
+    --specialfont: 'Instrument Sans', sans-serif;
+
     /* Colour Variables for fonts */
     --colour1: rgb(240, 248, 255);
     --colour2: rgb(128, 128, 128);
-    --colour3: rgb(0, 0, 0);
+    --colour3: rgb(255, 76, 76);
+    --colour4: rgb(50, 50, 50);
 
     /* Colour Variables for NavBars */
     --nav-dark: rgba(128, 128, 128, 0.757);
     --nav-light: rgba(40, 40, 40, 0.26);
+
+    /* Colour Gradient for background */
+    --gradient-colour-1: rgb(128, 128, 128);
+    --gradient-colour-2: rgb(250, 250, 250);
+
 
     /* Horizontal Rulers Colour */
     --hr-colour: rgba(246, 246, 246, 0.377);
@@ -16,29 +30,35 @@
 
 body,
 html {
-    font-family: 'Times New Roman', 'sans-serif';
+    font-family: var(--bodyfont);
     height: 100%;
     margin: 0;
 }
 
 body {
-    background: linear-gradient(rgb(128,128,128), white);
-    background-size: 100%, 100%;
-    background-repeat: no-repeat;
+    background: linear-gradient(var(--gradient-colour-1), var(--gradient-colour-2));
+    /*background-size: 100%, 100%;
+    background-repeat: no-repeat;*/
 }
 
 /* Navbar */
 
-.active {
-    font-weight: bold;
+.navbar-toggler i {
+    color: var(--colour1);
+    outline: none;
+    border: none;
+    box-shadow: none;
 }
 
-.navbar{
+.navbar-toggler i:focus {
+    box-shadow: none;
+}
+
+.navbar {
     background-color: var(--nav-dark);
     width: 100vw;
     margin-bottom: 0;
     border: 0;
-    
     right: 0;
     position: fixed;
     z-index: 100;
@@ -46,6 +66,7 @@ body {
 }
 
 .navbar-brand {
+    font-family: var(--titlefont);
     padding: 10px 0px 0px 10px;
     margin-bottom: 0;
     border: 0;
@@ -60,17 +81,24 @@ body {
     color: var(--colour1);
 }
 
-.navbar-toggler-icon {
-    color: black;
+.navbar-nav {
+    margin-left: 15px;
 }
 
 .nav-link {
-    color: black !important;
+    color: var(--colour1);
 }
 
 .nav-link:hover {
-    background-color: rgb(90, 90, 90);
+    color: var(--colour3);
 }
+
+.navbar .nav-item.active .nav-link {
+    color: var(--colour3);
+    text-decoration: underline;
+    text-decoration-color: var(--colour3);
+    text-decoration-thickness: 2px;
+  }
 
 hr {
     background-color: white;
@@ -246,40 +274,35 @@ hr {
 
 /* Footer */
 
-.footer {
-    background: var(--nav-dark);
-    max-width: 100vw;
-    max-height: 120px;
+.left-footer {
+    width: 50vw;
 }
 
-.socials {
-    text-align: center;
-    padding-left: 0;
-    font-size: 200%;
+.list-inline {
+    margin: 10px 5px;
 }
 
-.socials i {
+.socials-large {
+    color: var(--colour2);
+    text-align: right;
+    width: 50vw;
+}
+
+.socials-large li a i {
     color: var(--colour1);
-    text-align: center;
-    padding-top: 35px;
-    padding-right: 10px;
 }
 
-.socials i:hover {
+.socials-large li a i:hover {
     color: var(--colour3);
 }
 
-.dev-link,
-.dev-link > a {
-    color: var(--colour1);
-    font-size: 8px !important;
-    padding-right: 10px;
+.transparent-footer {
+    background-color: transparent;
+    border: none;
 }
+  
 
-.dev-link a:hover{
-    color: antiquewhite;
-}
-
+/* Modal */
 .modal-button {
     cursor: pointer;
 }
@@ -359,3 +382,16 @@ hr {
         width: auto;
       }
   }
+
+
+@media (min-width: 992px) {
+    .socials-large li a i {
+        color: var(--colour1);
+    }
+    .socials-large li a i:hover {
+        color: var(--colour3);
+    }
+    .socials-large {
+        background-color: var(--nav-dark);
+    }
+}
