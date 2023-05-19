@@ -37,12 +37,12 @@ html {
 
 body {
     background: linear-gradient(var(--gradient-colour-1), var(--gradient-colour-2));
-    /*background-size: 100%, 100%;
-    background-repeat: no-repeat;*/
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
 }
 
 /* Navbar */
-
+/* Navbar Toggler For Smaller Screens*/
 .navbar-toggler i {
     color: var(--colour1);
     outline: none;
@@ -55,7 +55,6 @@ body {
 }
 
 .navbar {
-    background-color: var(--nav-dark);
     width: 100vw;
     margin-bottom: 0;
     border: 0;
@@ -65,19 +64,18 @@ body {
     padding: 10px;
 }
 
-.navbar-brand {
+.nav-brand {
     color: var(--colour1);
     font-family: var(--titlefont);
     padding: 10px 0px 0px 10px;
     margin-bottom: 0;
     border: 0;
     position: fixed;
-    width: 50vw;
     left: 0;
     z-index: 101;
 }
 
-.navbar-brand:hover {
+.nav-brand:hover {
     text-decoration: none;
     color: var(--colour3);
 }
@@ -301,10 +299,12 @@ hr {
 
 .list-inline {
     margin: 10px 5px;
+
 }
 
 .socials-large {
-    color: var(--colour2);
+    background-color: var(--nav-dark);
+    color: var(--colour1);
     text-align: right;
     width: 50vw;
 }
@@ -316,12 +316,6 @@ hr {
 .socials-large li a i:hover {
     color: var(--colour3);
 }
-
-.transparent-footer {
-    background-color: transparent;
-    border: none;
-}
-  
 
 /* Modal */
 .modal-button {
@@ -390,7 +384,6 @@ hr {
     width: 80%;
 }
 
-
 /* Media Queries */
 
 @media (max-width: 600px) {
@@ -404,27 +397,37 @@ hr {
     }
       #about-hero {
         background-size: cover;
-        height: 10vh; /* Adjust the height as needed */
+        height: 50vh; /* Adjust the height as needed */
     }
-  }
-
-
-@media (min-width: 992px) {
     .socials-large li a i {
-        color: var(--colour1);
-    }
-    .socials-large li a i:hover {
         color: var(--colour3);
     }
-    .socials-large {
-        background-color: var(--nav-dark);
+    .socials-large li a i:hover {
+        color: var(--colour2);
     }
-
-}
-
-@media (max-width: 900px) {
-    #about-hero {
-      background-size: cover;
-      height: 60vh; /* Adjust the height as needed */
+    .custom-envelope {
+        color: var(--colour3);
+    }
+    .custom-envelope:hover {
+        color: var(--colour2);
     }
   }
+
+@media (min-width: 600px) and (max-width: 991px) {
+    #about-hero {
+        background-size: cover;
+        height: 50vh; /* Adjust the height as needed */
+    }
+    .socials-large li a i {
+        color: var(--colour3);
+    }
+    .socials-large li a i:hover {
+        color: var(--colour2);
+    }
+    .custom-envelope {
+        color: var(--colour3);
+    }
+    .custom-envelope:hover {
+        color: var(--colour2);
+    }
+}
