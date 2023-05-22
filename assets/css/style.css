@@ -274,26 +274,35 @@ hr {
 }
 
 #about-text {
+    background-color: transparent;
     color: var(--colour1);
-    width: 100vw;
-    height: 40vh;
-    text-align: center;
-    display: flex;
+    font-size: 1.2em;
+
+    width: 100%;
+    min-height: 40vh;
+    padding: 25px;
+    
+    text-align: left;
     justify-content: center;
-    align-items: center;
     align-content: center;
 }
 
-#about-text h1 {
-    font-family: var(--specialfont);
-    font-size: 2em;
+.about-title {
+    font-family: var(--titlefont);
 }
 
-#about-text h2 {
-    font-family: var(--specialfont);
-    font-size: 2em;
-    font-weight: 400;
+.text-exception {
+    color: var(--colour3);
 }
+
+#about-accordion a{
+    color: var(--colour3);
+    font-family: var(--bodyfont);
+    font-weight: 400;
+    line-height: 30px;
+    text-decoration: none;
+}
+
 
 /*------------------------------------------ Footer ------------------------------------------*/
 
@@ -303,23 +312,19 @@ hr {
 
 .list-inline {
     margin: 10px 5px;
-
+    color: var(--colour1);
 }
 
 .socials-large {
     background-color: var(--nav-dark);
-    color: var(--colour1);
     text-align: right;
     width: 50vw;
 }
 
-.socials-large li a i {
-    color: var(--colour1);
+.custom-envelope {
+    cursor: pointer;
 }
 
-.socials-large li a i:hover {
-    color: var(--colour3);
-}
 
 /*------------------------------------------- Modal -------------------------------------------*/
 .modal-button {
@@ -408,43 +413,12 @@ hr {
         width: auto;
     }
 
-    #about-hero {
-        background-size: cover;
-        height: 50vh;
-        /* Adjust the height as needed */
+    .socials-large li a {
+        color: var(--colour1);
     }
 
-    .socials-large li a i {
+    .socials-large li a:hover {
         color: var(--colour3);
-    }
-
-    .socials-large li a i:hover {
-        color: var(--colour2);
-    }
-
-    .custom-envelope {
-        color: var(--colour3);
-    }
-
-    .custom-envelope:hover {
-        color: var(--colour2);
-    }
-}
-
-@media (min-width: 600px) and (max-width: 991px) {
-    .socials-large {
-        text-align: center;
-        width: 100%;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        background-color: var(--nav-dark);
-        z-index: 1000;
-    }
-
-    .socials-large li {
-        display: inline-block;
-        margin: 0 10px;
     }
 }
 
@@ -454,9 +428,15 @@ hr {
     }
 
     #about-hero {
-        background-size: cover;
         height: 50vh;
-        /* Adjust the height as needed */
+        width: 100vw;
+    }
+
+    #about-text {
+        width: 100vw;
+        padding: 50px 50px;
+        align-items: baseline;
+        padding-bottom: 80px;
     }
 
     .left-footer {
@@ -467,19 +447,43 @@ hr {
         background-color: transparent;
     }
 
-    .socials-large li a i {
+    .socials-large li i {
         color: var(--colour3);
+    }
+
+    .socials-large li i:hover {
+        color: var(--colour2);
+    }
+
+    .socials-nav li i {
+        color: var(--colour3);
+    }
+
+    .socials-nav li i:hover {
+        color: var(--colour2);
+    }
+}
+
+@media (min-width: 991px) {
+    #about-text {
+        height: 100ch;
+        width: 50vw;
+        padding: 25vh 5vw;
+        align-items: center;
+        align-content: center;
+        overflow: auto;
+    }
+
+    #about-accordion {
+        overflow-y: scroll;
+        overflow: hidden;
+    }
+
+    .socials-large li a i {
+        color: var(--colour1);
     }
 
     .socials-large li a i:hover {
-        color: var(--colour2);
-    }
-
-    .custom-envelope {
         color: var(--colour3);
-    }
-
-    .custom-envelope:hover {
-        color: var(--colour2);
     }
 }
