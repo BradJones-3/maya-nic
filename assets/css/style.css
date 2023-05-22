@@ -41,7 +41,7 @@ body {
     background-repeat: no-repeat;
 }
 
-/* Navbar */
+/*------------------------------------------ Navbar ------------------------------------------*/
 /* Navbar Toggler For Smaller Screens*/
 .navbar-toggler i {
     color: var(--colour1);
@@ -97,7 +97,7 @@ body {
     text-decoration: underline;
     text-decoration-color: var(--colour3);
     text-decoration-thickness: 2px;
-  }
+}
 
 hr {
     background-color: white;
@@ -105,7 +105,7 @@ hr {
 }
 
 
-/*  Index Page  */
+/*---------------------------------------- Index Page ----------------------------------------*/
 
 .index-title {
     color: aliceblue;
@@ -118,7 +118,7 @@ hr {
 }
 
 
-/* Carousel */
+/*----------------------------------------- Carousel -----------------------------------------*/
 
 .center-block {
     float: none;
@@ -136,7 +136,7 @@ hr {
     bottom: initial;
     top: auto;
     margin-top: 1rem;
-  }
+}
 
 .carousel-indicators li {
     width: 10px;
@@ -151,7 +151,7 @@ hr {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    
+
     min-height: 80vh;
 }
 
@@ -160,7 +160,7 @@ hr {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    
+
     width: 100vw;
     min-height: 80vh;
 }
@@ -170,7 +170,7 @@ hr {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    
+
     width: 100vw;
     min-height: 80vh;
 }
@@ -180,7 +180,7 @@ hr {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    
+
     width: 100vw;
     min-height: 80vh;
 }
@@ -190,7 +190,7 @@ hr {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    
+
     width: 100vw;
     min-height: 80vh;
 }
@@ -200,37 +200,41 @@ hr {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    
+
     width: 100vw;
     min-height: 80vh;
 }
 
 .carousel-caption {
     position: absolute;
-    bottom: 3rem; /* Adjust the distance from the bottom */
+    bottom: 3rem;
+    /* Adjust the distance from the bottom */
     left: 0;
     right: 0;
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
-  }
+}
 
-  .carousel-caption h3 {
-    font-size: 2.5vw; /* Adjust the font size using viewport width */
+.carousel-caption h3 {
+    font-size: 2.5vw;
+    /* Adjust the font size using viewport width */
     margin-bottom: 0.5rem;
-  }
+}
 
-  .carousel-caption p {
-    font-size: 1.8vw; /* Adjust the font size using viewport width */
+.carousel-caption p {
+    font-size: 1.8vw;
+    /* Adjust the font size using viewport width */
     margin-bottom: 0;
-  }
+}
 
-  .carousel-indicators {
+.carousel-indicators {
     bottom: 0;
-    margin-bottom: 1rem; /* Adjust the distance between captions and indicators */
-  }
+    margin-bottom: 1rem;
+    /* Adjust the distance between captions and indicators */
+}
 
-/* Industry Work */
+/*-------------------------------------- Industry Work --------------------------------------*/
 
 .card {
     background-color: #353839;
@@ -255,11 +259,10 @@ hr {
 
 .btn-timeline:hover {
     text-decoration: underline;
-    color: #F2F2F2 ;
+    color: #F2F2F2;
 }
 
-
-/* About Page */
+/*---------------------------- About Page ----------------------------*/
 
 #about-hero {
     background: url(../media/maya-makeup.jpg) no-repeat center top;
@@ -291,7 +294,8 @@ hr {
     font-size: 2em;
     font-weight: 400;
 }
-/* Footer */
+
+/*------------------------------------------ Footer ------------------------------------------*/
 
 .left-footer {
     width: 50vw;
@@ -317,7 +321,7 @@ hr {
     color: var(--colour3);
 }
 
-/* Modal */
+/*------------------------------------------- Modal -------------------------------------------*/
 .modal-button {
     cursor: pointer;
 }
@@ -328,27 +332,34 @@ hr {
 }
 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 999; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 999;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-  }
-  
-  /* Modal content */
-  .modal-content {
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+}
+
+/* Modal content */
+.modal-content {
     background-color: #212529;
     color: #FFFFFF;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-  }
-  
+}
+
 /* CSS for the modal close button */
 .close {
     color: white;
@@ -356,13 +367,13 @@ hr {
     text-shadow: none;
     background: none;
     border: none;
-  }
-  
-  .close:hover {
+}
+
+.close:hover {
     color: white;
     opacity: 0.75;
-  }
-  
+}
+
 
 /* Form group styles */
 .form-group {
@@ -384,49 +395,90 @@ hr {
     width: 80%;
 }
 
-/* Media Queries */
+/*--------------------------------------- Media Queries ---------------------------------------*/
 
 @media (max-width: 600px) {
     #carousel {
-      width: 100%;
+        width: 100%;
     }
+
     #carousel img {
         object-fit: contain;
         max-height: 100%;
         width: auto;
     }
-      #about-hero {
+
+    #about-hero {
         background-size: cover;
-        height: 50vh; /* Adjust the height as needed */
+        height: 50vh;
+        /* Adjust the height as needed */
     }
+
     .socials-large li a i {
         color: var(--colour3);
     }
+
     .socials-large li a i:hover {
         color: var(--colour2);
     }
+
     .custom-envelope {
         color: var(--colour3);
     }
+
     .custom-envelope:hover {
         color: var(--colour2);
     }
-  }
+}
 
 @media (min-width: 600px) and (max-width: 991px) {
+    .socials-large {
+        text-align: center;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: var(--nav-dark);
+        z-index: 1000;
+    }
+
+    .socials-large li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+    .navbar {
+        background-color: var(--nav-dark);
+    }
+
     #about-hero {
         background-size: cover;
-        height: 50vh; /* Adjust the height as needed */
+        height: 50vh;
+        /* Adjust the height as needed */
     }
+
+    .left-footer {
+        width: 100%;
+    }
+
+    .socials-large {
+        background-color: transparent;
+    }
+
     .socials-large li a i {
         color: var(--colour3);
     }
+
     .socials-large li a i:hover {
         color: var(--colour2);
     }
+
     .custom-envelope {
         color: var(--colour3);
     }
+
     .custom-envelope:hover {
         color: var(--colour2);
     }
