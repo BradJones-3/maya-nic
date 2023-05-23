@@ -76,8 +76,7 @@
           <h2>Meet <span class="text-exception">Maya</span></h2>
         </div>
         <div class="about-text">
-          <p>
-
+          <p></p>
         </div>
         <p>Want to know more just click below!</p>
         <div class="container" id="about-accordion">
@@ -85,36 +84,36 @@
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h4 class="panel-title">
-                  <a data-toggle='collapse' href="#collapse1">Qualifications
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Qualifications
                     <i class="fa fa-angle-down"></i>
                   </a>
                 </h4>
               </div>
-              <div id="collapse1" class="panel-collapse in">
+              <div id="collapse1" class="panel-collapse collapse">
                 <div class="panel-body">
-                  <p></p>
+                  <p>TEXT HERE</p>
                 </div>
               </div>
             </div>
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h4 class="panel-title">
-                  <a data-toggle='collapse' href="#collapse2">Runways
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Runways
                     <i class="fa fa-angle-down"></i>
                   </a>
                 </h4>
               </div>
-              <div id="collapse2" class="panel-collapse in">
+              <div id="collapse2" class="panel-collapse collapse">
                 <div class="panel-body">
-                  <p></p>
+                  <p>TEXT HERE</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
-  </div>
   </div>
   </div>
 
@@ -172,6 +171,14 @@
   </div>
   </div>
   </div>
-</body>
 
+</body>
+<script>
+  $(document).ready(function () {
+    $('#accordion .panel-collapse').on('show.bs.collapse', function () {
+      // Close previously opened accordions
+      $('#accordion .panel-collapse.show').collapse('hide');
+    });
+  });
+</script>
 </html>

@@ -464,9 +464,9 @@ hr {
     }
 }
 
-@media (min-width: 991px) {
+@media (min-width: 992px) {
     #about-text {
-        height: 100ch;
+        height: 100vh;
         width: 50vw;
         padding: 25vh 5vw;
         align-items: center;
