@@ -147,7 +147,7 @@ hr {
 
 
 .c-image1 {
-    background-image: url(../media/maya-vogue.png);
+    background-image: url(../media/maya-makeup.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -302,6 +302,19 @@ hr {
     line-height: 30px;
     text-decoration: none;
 }
+
+
+/*------------------------------------------ Gallery -----------------------------------------*/
+
+.gallery-wrapper {
+    margin-top: 100px; /* Adjust the value as needed */
+  }
+
+.banner {
+    font-family: var(--titlefont);
+    background: -webkit-linear-gradient(to right, var(--colour4), var(--colour1), var(--colour2));
+    background: linear-gradient(to right, var(--colour4), var(--colour1), var(--colour4));
+  }
 
 
 /*------------------------------------------ Footer ------------------------------------------*/
