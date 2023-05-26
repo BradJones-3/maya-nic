@@ -26,6 +26,10 @@
 ## Issues And Bugs
  The developer came across multiple bugs when implementing some features on the website, the ones that was more noticeable, along with the solutions are listed below:
 
+ * Envelope Icon
+ 
+ When trying to change the icons for Maya's social the enevlope icon would take its own properties and react differently to the other two icons. To get around this issue I had to create its own custom class that I would call from the css file in order to get all icons across the webpage to all act in unison.
+
 ## Deployment
 
 * Deploying on GitHub Pages
