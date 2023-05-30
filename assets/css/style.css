@@ -303,20 +303,6 @@ hr {
     text-decoration: none;
 }
 
-
-/*------------------------------------------ Gallery -----------------------------------------*/
-
-.gallery-wrapper {
-    margin-top: 100px; /* Adjust the value as needed */
-  }
-
-.banner {
-    font-family: var(--titlefont);
-    background: -webkit-linear-gradient(to right, var(--colour4), var(--colour1), var(--colour2));
-    background: linear-gradient(to right, var(--colour4), var(--colour1), var(--colour4));
-  }
-
-
 /*------------------------------------------ Footer ------------------------------------------*/
 
 .left-footer {
