@@ -30,6 +30,14 @@
  
  When trying to change the icons for Maya's social the enevlope icon would take its own properties and react differently to the other two icons. To get around this issue I had to create its own custom class that I would call from the css file in order to get all icons across the webpage to all act in unison.
 
+ * Nav bar
+
+ When trying to implement the navbar on the gallery page the images would overlap with each other to try and fix this issue I tried to apply the navbar with the 'sticky' attribute so that the navbar would stay at the top of the page so that no overlapping was occuring. This ended up making the navbar and navbar logo would become un-aligned. Also causing the navbar logo to stay in the top left corner of the screen.
+
+ * About Me Page
+
+ When styling the about me page when adjusting the viewpoints at a certain (991px) the page would not follow any of the breakpoints arguements so to fix this issue I had to fix the min and max width viewpoint to ensure that that if anyone viewed the website at that viewpoint that the webpage would stay inline with what was expected when at that point.
+
 ## Deployment
 
 * Deploying on GitHub Pages
