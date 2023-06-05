@@ -67,7 +67,7 @@ body {
 .nav-brand {
     color: var(--colour1);
     font-family: var(--titlefont);
-    padding: 10px 0px 0px 10px;
+    padding: 8px;
     margin-bottom: 0;
     border: 0;
     position: fixed;
@@ -115,6 +115,7 @@ hr {
     align-items: center;
     text-align: center;
     height: 100px;
+    margin-top: 15px;
 }
 
 
