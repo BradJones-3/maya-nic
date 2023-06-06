@@ -34,9 +34,14 @@
 
  When trying to implement the navbar on the gallery page the images would overlap with each other to try and fix this issue I tried to apply the navbar with the 'sticky' attribute so that the navbar would stay at the top of the page so that no overlapping was occuring. This ended up making the navbar and navbar logo would become un-aligned. Also causing the navbar logo to stay in the top left corner of the screen.
 
+ * Nav bar & links
+
+ When trying to make all the navbars and the links inside the navbar align, I noticed that they wasn't all aligning as I had intended for them to do and some were slightly higher on the page than others. After using the Developer Tools in my web browser I could see that the nav links all had a padding of 8px whilst the 'nav-logo' didnt go by the same rules causing them to be un-aligned, I also used Diffchecker and found that the structure of my navbar was slighty off and had a div which was causing issues also. I also found that 'nav-padding' was also causing issues so decided to see if removing that class would help the alignment issue. 
+ 
  * About Me Page
 
  When styling the about me page when adjusting the viewpoints at a certain (991px) the page would not follow any of the breakpoints arguements so to fix this issue I had to fix the min and max width viewpoint to ensure that that if anyone viewed the website at that viewpoint that the webpage would stay inline with what was expected when at that point.
+
 
 ## Deployment
 
