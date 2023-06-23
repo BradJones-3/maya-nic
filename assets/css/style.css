@@ -118,6 +118,9 @@ hr {
     margin-top: 15px;
 }
 
+.content {
+    padding: 80px;
+}
 
 /*----------------------------------------- Carousel -----------------------------------------*/
 
@@ -202,31 +205,17 @@ hr {
     background-repeat: no-repeat;
     background-size: contain;
 
-    width: 100vw;
-    min-height: 80vh;
+    width: 1100;
+    min-height: 500;
 }
 
 .carousel-caption {
     position: absolute;
-    bottom: 3rem;
     /* Adjust the distance from the bottom */
     left: 0;
     right: 0;
-    padding: 1rem;
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
-}
-
-.carousel-caption h3 {
-    font-size: 2.5vw;
-    /* Adjust the font size using viewport width */
-    margin-bottom: 0.5rem;
-}
-
-.carousel-caption p {
-    font-size: 1.8vw;
-    /* Adjust the font size using viewport width */
-    margin-bottom: 0;
 }
 
 .carousel-indicators {
