@@ -1,28 +1,54 @@
 /*------------------------------------------ Gallery -----------------------------------------*/
-
-.spacer {
-  height: 120px;
+* {
+  box-sizing: border-box;
 }
 
-.gallery-container {
-  background: linear-gradient(var(--gradient-colour-1), var(--gradient-colour-2));
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 20px;
-}
 
-.gallery-item {
-  margin-bottom: 20px;
-}
-
-.gallery-item img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.gallery-item .caption {
-  font-size: 14px;
-  color: var(--colour3);
-  margin-top: 5px;
+.main {
+  padding-top: 60px;
   text-align: center;
+  margin: auto;
+}
+
+h3 {
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
