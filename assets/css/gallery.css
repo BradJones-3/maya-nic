@@ -1,8 +1,44 @@
+/*------------------------------------------- Font Import*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Instrument+Sans&family=Roboto:wght@400;700&display=swap');
+
+/*------------------------------------------- Root Variables*/
+
+:root {
+    /* Font Variables */
+    --titlefont: 'Roboto', sans-serif;
+    --bodyfont: 'Lato', sans-serif;
+    --specialfont: 'Instrument Sans', sans-serif;
+
+    /* Colour Variables for fonts */
+    --colour1: rgb(240, 248, 255);
+    --colour2: rgb(128, 128, 128);
+    --colour3: rgb(255, 76, 76);
+    --colour4: rgb(50, 50, 50);
+
+    /* Colour Variables for NavBars */
+    --nav-dark: rgba(128, 128, 128, 0.757);
+    --nav-light: rgba(40, 40, 40, 0.26);
+
+    /* Colour Gradient for background */
+    --gradient-colour-1: rgb(128, 128, 128);
+    --gradient-colour-2: rgb(250, 250, 250);
+
+
+    /* Horizontal Rulers Colour */
+    --hr-colour: rgba(246, 246, 246, 0.377);
+}
+
+
 /*------------------------------------------ Gallery -----------------------------------------*/
 * {
   box-sizing: border-box;
 }
 
+.gallery-header {
+  font: var(--titlefont);
+  font-size: 250%;
+  color: var(--colour4);
+}
 
 .main {
   padding-top: 60px;
@@ -34,9 +70,13 @@ h3 {
 }
 
 .content {
-  background-color: white;
+  background: linear-gradient(var(--gradient-colour-2), var(--gradient-colour-1));
   padding: 10px;
   margin-bottom: 10px;
+}
+
+.gallery-p {
+  color: var(--colour1);
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
