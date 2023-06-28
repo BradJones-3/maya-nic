@@ -347,17 +347,17 @@ hr {
 
 /* Modal content */
 .modal-content {
-    background-color: #212529;
-    color: #FFFFFF;
+    background: linear-gradient(var(--gradient-colour-1), var(--gradient-colour-2));
+    color: var(--colour1);
     margin: auto;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #888;
     width: 80%;
 }
 
 /* CSS for the modal close button */
 .close {
-    color: white;
+    color: var(--colour1);
     opacity: 1;
     text-shadow: none;
     background: none;
@@ -365,7 +365,7 @@ hr {
 }
 
 .close:hover {
-    color: white;
+    color: var(--colour3);
     opacity: 0.75;
 }
 
@@ -381,13 +381,36 @@ hr {
 .form-group label {
     width: 20%;
     text-align: right;
-    padding-right: 10px;
 }
 
 /* Input and textarea styles */
 .form-group input,
 .form-group textarea {
     width: 80%;
+}
+
+.recipient-name {
+    color: var(--colour3);
+}
+
+#recipient-name {
+    margin-left: 10px;
+}
+
+.message-text {
+    color: var(--colour3);
+}
+
+#message-text {
+    min-height: 150px;
+    margin-left: 10px;
+}
+
+/*--------------------------------------- Modal Buttons ---------------------------------------*/
+
+.btn {
+    background-color: var(--colour2);
+    color: var(--colour1);
 }
 
 /*--------------------------------------- Media Queries ---------------------------------------*/
